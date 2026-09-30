@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b2a4a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Fair Notes">
+  <title>Fair Notes</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b2a4a'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%23e8b64c' font-family='Arial' font-weight='700'>F</text></svg>">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <header class="top">
+    <div class="top-row">
+      <h1>Fair Notes</h1>
+      <div id="stats" class="stats"></div>
+    </div>
+    <div id="viewTools"></div>
+  </header>
+
+  <main id="main"></main>
+
+  <button id="fab" class="fab" aria-label="Add a company not on the list">+</button>
+
+  <nav class="tabs">
+    <button data-view="fair" class="on"><span>🏢</span>Companies</button>
+    <button data-view="todo"><span>📅</span>Follow-up<b id="todoBadge"></b></button>
+    <button data-view="review"><span>⭐</span>Review</button>
+  </nav>
+
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="data.js?v=2"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
